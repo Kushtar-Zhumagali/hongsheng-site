@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Equipment Catalog - HongSheng Trading</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#185eb0",
+                    "outline": "#837560",
+                    "on-secondary-fixed": "#001b3d",
+                    "on-primary-fixed-variant": "#5e4200",
+                    "primary-fixed": "#ffdea6",
+                    "inverse-on-surface": "#f0f1f2",
+                    "background": "#f8f9fa",
+                    "inverse-primary": "#ffbb16",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#d6e3ff",
+                    "surface-container": "#edeeef",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed": "#e5e2e1",
+                    "on-tertiary-fixed": "#1c1b1b",
+                    "on-tertiary-container": "#525151",
+                    "surface-tint": "#7c5800",
+                    "on-primary-container": "#6b4c00",
+                    "error": "#ba1a1a",
+                    "surface": "#f8f9fa",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-bright": "#f8f9fa",
+                    "secondary-fixed-dim": "#a9c7ff",
+                    "primary-fixed-dim": "#ffbb16",
+                    "tertiary-container": "#c7c4c4",
+                    "on-primary-fixed": "#271900",
+                    "primary-container": "#fdb913",
+                    "on-surface-variant": "#504533",
+                    "surface-dim": "#d9dadb",
+                    "surface-container-highest": "#e1e3e4",
+                    "secondary-container": "#70a6fe",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "surface-container-low": "#f3f4f5",
+                    "surface-container-high": "#e7e8e9",
+                    "tertiary": "#5f5e5e",
+                    "on-tertiary-fixed-variant": "#474746",
+                    "on-background": "#191c1d",
+                    "on-secondary-fixed-variant": "#00468c",
+                    "on-tertiary": "#ffffff",
+                    "on-surface": "#191c1d",
+                    "on-error": "#ffffff",
+                    "outline-variant": "#d5c4ac",
+                    "on-secondary-container": "#003b77",
+                    "on-error-container": "#93000a",
+                    "primary": "#7c5800",
+                    "inverse-surface": "#2e3132",
+                    "surface-variant": "#e1e3e4"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter", "sans-serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-20 md:pb-0">
+<!-- TopAppBar -->
+<header class="bg-[#f8f9fa] dark:bg-[#191c1d] backdrop-blur-md bg-opacity-80 font-inter font-black uppercase tracking-tight text-lg docked full-width top-0 sticky z-50 bg-[#f3f4f5] dark:bg-[#2e3132] shadow-none flex justify-between items-center w-full px-6 h-16">
+<button class="text-[#191c1d] dark:text-[#e1e3e4] hover:bg-[#e7e8e9] dark:hover:bg-[#3d3f40] Active: opacity-70 transition-opacity p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<div class="font-black text-[#191c1d] dark:text-[#f8f9fa] tracking-tighter text-xl">HongSheng Trading</div>
+<button class="text-[#191c1d] dark:text-[#e1e3e4] hover:bg-[#e7e8e9] dark:hover:bg-[#3d3f40] Active: opacity-70 transition-opacity p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+</header>
+<!-- NavigationDrawer (Hidden on Mobile) -->
+<nav class="hidden md:flex bg-[#f3f4f5] dark:bg-[#191c1d] font-inter font-bold text-sm uppercase tracking-widest text-[#191c1d] dark:text-[#f8f9fa] font-black rounded-r-none h-full w-4/5 max-w-sm tonal-shift via bg-[#e7e8e9] dark:bg-[#2e3132] shadow-[24px_0_40px_rgba(25,28,29,0.06)] transition-all duration-300 ease-in-out fixed inset-y-0 left-0 z-[60] flex flex-col p-8 transition-transform -translate-x-full" id="sideNav">
+<div class="mb-8 font-black text-xl tracking-tighter">Industrial Solutions</div>
+<div class="flex flex-col space-y-2">
+<a class="flex items-center space-x-4 p-3 text-zinc-500 dark:text-zinc-400 font-medium hover:bg-[#e1e3e4] dark:hover:bg-[#2e3132] rounded" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span>Home</span>
+</a>
+<a class="flex items-center space-x-4 p-3 border-l-4 border-[#fdb913] bg-transparent font-bold text-[#191c1d] dark:text-white rounded" href="#">
+<span class="material-symbols-outlined" data-icon="precision_manufacturing">precision_manufacturing</span>
+<span>Machine Catalog</span>
+</a>
+<a class="flex items-center space-x-4 p-3 text-zinc-500 dark:text-zinc-400 font-medium hover:bg-[#e1e3e4] dark:hover:bg-[#2e3132] rounded" href="#">
+<span class="material-symbols-outlined" data-icon="compare_arrows">compare_arrows</span>
+<span>Comparison Tool</span>
+</a>
+<a class="flex items-center space-x-4 p-3 text-zinc-500 dark:text-zinc-400 font-medium hover:bg-[#e1e3e4] dark:hover:bg-[#2e3132] rounded" href="#">
+<span class="material-symbols-outlined" data-icon="engineering">engineering</span>
+<span>Support</span>
+</a>
+</div>
+</nav>
+<!-- Main Content Stage -->
+<main class="md:ml-0 transition-all duration-300" id="mainContent">
+<!-- Sticky Filter/Sort Bar -->
+<div class="sticky top-16 z-40 bg-surface/90 backdrop-blur-md px-6 py-4 flex justify-between items-center shadow-[0_8px_24px_rgba(25,28,29,0.04)]">
+<div class="font-headline font-bold text-on-surface text-lg">Heavy Machinery</div>
+<div class="flex space-x-2">
+<button class="bg-surface-container-low text-on-surface p-2 rounded-DEFAULT flex items-center justify-center hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="filter_list">filter_list</span>
+</button>
+<button class="bg-surface-container-low text-on-surface p-2 rounded-DEFAULT flex items-center justify-center hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="sort">sort</span>
+</button>
+</div>
+</div>
+<!-- Catalog List -->
+<div class="p-4 md:p-8 space-y-6 max-w-5xl mx-auto">
+<!-- Machine Card 1 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT overflow-hidden group">
+<div class="h-48 md:h-64 bg-surface-container-low relative">
+<img alt="Excavator" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" data-alt="Heavy yellow excavator on a construction site with dirt mounds, bright daylight, industrial focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiOUIVZbpcDeQ7z5vPqjXyUFOHNI7q6hBGRnjhqTbQTPHxX0U69u0SMzkSGkeniJQZ0MEb47vJC3lqOIxeofRrrgD67VKb7pHfjN39bk_61oOpmmzVXQf-esEFW2rCRhWHOsK3qTw1N6ZHV_Q5GgZ6WpAgd1oZK8UkWrLGuXdgh_mLoqVHHkLlaCzudab7U3_cdZ8EII1RRDVP7aNbCbnLWTNTFD3b0_lTT4DrAB8Tg-r52aD8IJkyxqaaUGi_S6k-PinOpbgC7Uk"/>
+<div class="absolute top-4 right-4 bg-primary text-on-primary font-label text-xs font-bold px-2 py-1 rounded-sm">IN STOCK</div>
+</div>
+<div class="p-6">
+<div class="font-label text-xs font-bold text-tertiary uppercase tracking-wider mb-1">Earthmoving</div>
+<h3 class="font-headline font-black text-2xl text-on-surface mb-6">XE215C Excavator</h3>
+<div class="grid grid-cols-2 gap-y-6 mb-8">
+<div>
+<div class="font-label text-sm text-on-surface-variant/60 font-semibold mb-1">Operating Weight</div>
+<div class="font-body text-base font-bold text-on-surface">21,500 kg</div>
+</div>
+<div>
+<div class="font-label text-sm text-on-surface-variant/60 font-semibold mb-1">Engine Power</div>
+<div class="font-body text-base font-bold text-on-surface">128.5 kW</div>
+</div>
+<div>
+<div class="font-label text-sm text-on-surface-variant/60 font-semibold mb-1">Bucket Capacity</div>
+<div class="font-body text-base font-bold text-on-surface">0.93 - 1.2 m³</div>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary font-label font-bold py-3 px-6 rounded-xl bg-gradient-to-r from-primary to-primary-container hover:opacity-90 transition-opacity flex justify-center items-center space-x-2">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Machine Card 2 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT overflow-hidden group">
+<div class="h-48 md:h-64 bg-surface-container-low relative">
+<img alt="Wheel Loader" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" data-alt="Large yellow wheel loader moving gravel in a quarry, dusty environment, powerful machinery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAczYjVHxEIe0d6b604BbhOKEplVZATtxcelqMPv2iv32D-1Pa-eCp4fzt5WTzMVA1zxkIF5jTLwJQX1XnjNAAcFgFtymsQTAVaH2SQSfhbxXwXhHC-1cz-V4ScwRfYWBLOSIr4bNTZSbvxU1FdAC5WVEn6_zv27Tq0D1e4xzoE-uK-Hs5y2aOZ_tXIwGxF96_N3kLjhyg3UhdzZASUtaimru0sU6SeaU7Rz8tH8aNtN3_cl26KrZVLQaa58u2qU7QhpNNdwwN_yXA"/>
+</div>
+<div class="p-6">
+<div class="font-label text-xs font-bold text-tertiary uppercase tracking-wider mb-1">Loading Equipment</div>
+<h3 class="font-headline font-black text-2xl text-on-surface mb-6">LW500FN Wheel Loader</h3>
+<div class="grid grid-cols-2 gap-y-6 mb-8">
+<div>
+<div class="font-label text-sm text-on-surface-variant/60 font-semibold mb-1">Rated Load</div>
+<div class="font-body text-base font-bold text-on-surface">5,000 kg</div>
+</div>
+<div>
+<div class="font-label text-sm text-on-surface-variant/60 font-semibold mb-1">Engine Power</div>
+<div class="font-body text-base font-bold text-on-surface">162 kW</div>
+</div>
+<div>
+<div class="font-label text-sm text-on-surface-variant/60 font-semibold mb-1">Operating Weight</div>
+<div class="font-body text-base font-bold text-on-surface">16,900 kg</div>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary font-label font-bold py-3 px-6 rounded-xl bg-gradient-to-r from-primary to-primary-container hover:opacity-90 transition-opacity flex justify-center items-center space-x-2">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Machine Card 3 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT overflow-hidden group">
+<div class="h-48 md:h-64 bg-surface-container-low relative">
+<div class="w-full h-full bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-surface-dim" data-icon="engineering">engineering</span>
+</div>
+<div class="absolute top-4 right-4 bg-error text-on-error font-label text-xs font-bold px-2 py-1 rounded-sm">PRE-ORDER</div>
+</div>
+<div class="p-6">
+<div class="font-label text-xs font-bold text-tertiary uppercase tracking-wider mb-1">Road Machinery</div>
+<h3 class="font-headline font-black text-2xl text-on-surface mb-6">XS123 Single Drum Roller</h3>
+<div class="grid grid-cols-2 gap-y-6 mb-8">
+<div>
+<div class="font-label text-sm text-on-surface-variant/60 font-semibold mb-1">Operating Weight</div>
+<div class="font-body text-base font-bold text-on-surface">12,000 kg</div>
+</div>
+<div>
+<div class="font-label text-sm text-on-surface-variant/60 font-semibold mb-1">Vibration Frequency</div>
+<div class="font-body text-base font-bold text-on-surface">30/35 Hz</div>
+</div>
+<div>
+<div class="font-label text-sm text-on-surface-variant/60 font-semibold mb-1">Compaction Width</div>
+<div class="font-body text-base font-bold text-on-surface">2,130 mm</div>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary font-label font-bold py-3 px-6 rounded-xl bg-gradient-to-r from-primary to-primary-container hover:opacity-90 transition-opacity flex justify-center items-center space-x-2">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden bg-[#f8f9fa] dark:bg-[#191c1d] font-inter font-semibold text-[10px] uppercase docked full-width bottom-0 fixed z-50 border-t border-[#d5c4ac] border-opacity-15 shadow-none fixed bottom-0 left-0 w-full flex justify-around items-center h-16 px-4 pb-safe bg-surface">
+<a class="flex flex-col items-center justify-center text-[#191c1d] dark:text-[#e1e3e4] opacity-60 hover:opacity-100 w-16" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+<span>Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#fdb913] text-[#191c1d] rounded-sm py-1 px-3 scale-105 Active: scale-95 transition-transform duration-150 w-16" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="category">category</span>
+<span>Catalog</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#191c1d] dark:text-[#e1e3e4] opacity-60 hover:opacity-100 w-16" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="balance">balance</span>
+<span>Compare</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#191c1d] dark:text-[#e1e3e4] opacity-60 hover:opacity-100 w-16" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="mail">mail</span>
+<span>Inquiry</span>
+</a>
+</nav>
+</body></html>

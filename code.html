@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Inquiry - HongSheng Trading</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#c7c4c4",
+                        "on-primary-fixed": "#271900",
+                        "on-primary": "#ffffff",
+                        "inverse-primary": "#ffbb16",
+                        "on-surface-variant": "#504533",
+                        "surface-container": "#edeeef",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "inverse-surface": "#2e3132",
+                        "surface-container-lowest": "#ffffff",
+                        "outline": "#837560",
+                        "inverse-on-surface": "#f0f1f2",
+                        "secondary-fixed": "#d6e3ff",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-container": "#525151",
+                        "on-secondary-container": "#003b77",
+                        "on-primary-fixed-variant": "#5e4200",
+                        "error-container": "#ffdad6",
+                        "tertiary": "#5f5e5e",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#f8f9fa",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "surface": "#f8f9fa",
+                        "secondary": "#185eb0",
+                        "on-secondary-fixed": "#001b3d",
+                        "on-surface": "#191c1d",
+                        "surface-tint": "#7c5800",
+                        "secondary-fixed-dim": "#a9c7ff",
+                        "primary-fixed": "#ffdea6",
+                        "primary": "#7c5800",
+                        "outline-variant": "#d5c4ac",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "on-tertiary": "#ffffff",
+                        "background": "#f8f9fa",
+                        "secondary-container": "#70a6fe",
+                        "primary-container": "#fdb913",
+                        "surface-variant": "#e1e3e4",
+                        "surface-dim": "#d9dadb",
+                        "surface-container-low": "#f3f4f5",
+                        "on-error": "#ffffff",
+                        "surface-container-highest": "#e1e3e4",
+                        "surface-container-high": "#e7e8e9",
+                        "on-primary-container": "#6b4c00",
+                        "on-background": "#191c1d",
+                        "on-secondary-fixed-variant": "#00468c",
+                        "primary-fixed-dim": "#ffbb16",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#e5e2e1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface antialiased min-h-screen flex flex-col pt-16 pb-20">
+<!-- TopAppBar -->
+<header class="bg-[#f8f9fa] dark:bg-[#191c1d] backdrop-blur-md bg-opacity-80 docked full-width top-0 sticky z-50 flex justify-between items-center w-full px-6 h-16 shadow-none bg-[#f3f4f5] dark:bg-[#2e3132]">
+<div class="flex items-center gap-3">
+<button class="text-[#191c1d] dark:text-[#e1e3e4] hover:bg-[#e7e8e9] dark:hover:bg-[#3d3f40] p-2 rounded-full Active: opacity-70 transition-opacity">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<span class="font-inter font-black uppercase tracking-tight text-lg text-[#7c5800] dark:text-[#fdb913]">HongSheng Trading</span>
+</div>
+<div>
+<!-- Removed shopping_cart as per instruction -->
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow flex flex-col px-4 py-6 gap-8">
+<!-- Header Section -->
+<section class="flex flex-col gap-2">
+<h1 class="font-headline font-black text-3xl tracking-tighter text-on-surface">Send an Inquiry</h1>
+<p class="font-body text-base text-on-surface-variant">Request pricing, specifications, or consult with our engineering team for your heavy machinery needs.</p>
+</section>
+<!-- Form Section (Heavy Duty) -->
+<section class="bg-surface-container-lowest p-6 rounded-DEFAULT shadow-[0_8px_40px_rgba(25,28,29,0.06)] flex flex-col gap-6">
+<div class="flex flex-col gap-1.5">
+<label class="font-label font-semibold text-sm text-on-surface-variant" for="fullName">Full Name *</label>
+<input class="bg-surface-container-highest border-none rounded-DEFAULT p-3 text-on-surface focus:ring-0 focus:outline-none focus:bg-secondary-container/30 transition-colors w-full" id="fullName" placeholder="John Doe" type="text"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label font-semibold text-sm text-on-surface-variant" for="companyName">Company Name</label>
+<input class="bg-surface-container-highest border-none rounded-DEFAULT p-3 text-on-surface focus:ring-0 focus:outline-none focus:bg-secondary-container/30 transition-colors w-full" id="companyName" placeholder="Acme Corp" type="text"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label font-semibold text-sm text-on-surface-variant" for="emailAddress">Email Address *</label>
+<input class="bg-surface-container-highest border-none rounded-DEFAULT p-3 text-on-surface focus:ring-0 focus:outline-none focus:bg-secondary-container/30 transition-colors w-full" id="emailAddress" placeholder="john@acme.com" type="email"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label font-semibold text-sm text-on-surface-variant" for="inquiryType">Inquiry Type</label>
+<select class="bg-surface-container-highest border-none rounded-DEFAULT p-3 text-on-surface focus:ring-0 focus:outline-none focus:bg-secondary-container/30 transition-colors w-full appearance-none" id="inquiryType">
+<option>Equipment Quote</option>
+<option>Parts Inquiry</option>
+<option>Technical Support</option>
+<option>Other</option>
+</select>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label font-semibold text-sm text-on-surface-variant" for="message">Message *</label>
+<textarea class="bg-surface-container-highest border-none rounded-DEFAULT p-3 text-on-surface focus:ring-0 focus:outline-none focus:bg-secondary-container/30 transition-colors w-full resize-none" id="message" placeholder="Please provide details about your requirements..." rows="4"></textarea>
+</div>
+<button class="bg-primary text-on-primary bg-gradient-to-r from-primary to-primary-container font-label font-bold text-base py-4 rounded-xl w-full flex justify-center items-center gap-2 mt-2">
+<span>Submit Inquiry</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</section>
+<!-- Quick Actions -->
+<section class="flex flex-col gap-4 mt-2">
+<h2 class="font-headline font-bold text-lg text-on-surface">Immediate Assistance</h2>
+<div class="flex flex-col gap-3">
+<button class="bg-transparent border border-outline/20 text-on-surface font-label font-bold text-base py-4 px-6 rounded-xl flex items-center justify-between w-full">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">call</span>
+<span>Call Sales Team</span>
+</div>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</button>
+<button class="bg-transparent border border-outline/20 text-on-surface font-label font-bold text-base py-4 px-6 rounded-xl flex items-center justify-between w-full">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#25D366]">chat</span>
+<span>Message on WhatsApp</span>
+</div>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="bg-[#f8f9fa] dark:bg-[#191c1d] docked full-width bottom-0 fixed z-50 border-t border-[#d5c4ac] border-opacity-15 shadow-none fixed bottom-0 left-0 w-full flex justify-around items-center h-16 px-4 pb-safe md:hidden">
+<a class="flex flex-col items-center justify-center text-[#191c1d] dark:text-[#e1e3e4] opacity-60 hover:opacity-100 Active: scale-95 transition-transform duration-150 group" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-inter font-semibold text-[10px] uppercase mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#191c1d] dark:text-[#e1e3e4] opacity-60 hover:opacity-100 Active: scale-95 transition-transform duration-150 group" href="#">
+<span class="material-symbols-outlined" data-icon="category">category</span>
+<span class="font-inter font-semibold text-[10px] uppercase mt-1">Catalog</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#191c1d] dark:text-[#e1e3e4] opacity-60 hover:opacity-100 Active: scale-95 transition-transform duration-150 group" href="#">
+<span class="material-symbols-outlined" data-icon="balance">balance</span>
+<span class="font-inter font-semibold text-[10px] uppercase mt-1">Compare</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#fdb913] text-[#191c1d] rounded-sm py-1 px-3 scale-105 hover:opacity-100 Active: scale-95 transition-transform duration-150 group" href="#">
+<span class="material-symbols-outlined" data-icon="mail" data-weight="fill" style="font-variation-settings: 'FILL' 1;">mail</span>
+<span class="font-inter font-semibold text-[10px] uppercase mt-1">Inquiry</span>
+</a>
+</nav>
+</body></html>

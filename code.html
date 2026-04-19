@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>XCMG Industrial | Equipment Comparison</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#837560",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "on-primary-fixed": "#271900",
+                        "surface-dim": "#d9dadb",
+                        "surface-container-high": "#e7e8e9",
+                        "inverse-on-surface": "#f0f1f2",
+                        "tertiary-fixed": "#e5e2e1",
+                        "tertiary-container": "#c7c4c4",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-surface": "#2e3132",
+                        "secondary-fixed-dim": "#a9c7ff",
+                        "surface-container-highest": "#e1e3e4",
+                        "primary-container": "#fdb913",
+                        "error": "#ba1a1a",
+                        "background": "#f8f9fa",
+                        "surface-container": "#edeeef",
+                        "inverse-primary": "#ffbb16",
+                        "on-secondary-fixed-variant": "#00468c",
+                        "primary-fixed": "#ffdea6",
+                        "on-surface": "#191c1d",
+                        "on-secondary-container": "#003b77",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#f8f9fa",
+                        "outline-variant": "#d5c4ac",
+                        "on-primary": "#ffffff",
+                        "surface": "#f8f9fa",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#5e4200",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "secondary": "#185eb0",
+                        "primary": "#7c5800",
+                        "on-background": "#191c1d",
+                        "on-surface-variant": "#504533",
+                        "on-primary-container": "#6b4c00",
+                        "surface-variant": "#e1e3e4",
+                        "surface-container-low": "#f3f4f5",
+                        "primary-fixed-dim": "#ffbb16",
+                        "on-secondary-fixed": "#001b3d",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#70a6fe",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "surface-tint": "#7c5800",
+                        "secondary-fixed": "#d6e3ff",
+                        "on-tertiary-container": "#525151",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#5f5e5e",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm dark:shadow-none flex justify-between items-center h-16 px-8 ml-72 w-[calc(100%-18rem)]">
+<div class="hidden md:flex items-center gap-8 h-full">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-slate-900 dark:hover:text-white transition-colors h-full flex items-center" href="#">Inventory</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-slate-900 dark:hover:text-white transition-colors h-full flex items-center" href="#">Fleet Management</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-slate-900 dark:hover:text-white transition-colors h-full flex items-center" href="#">Financing</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-slate-900 dark:hover:text-white transition-colors h-full flex items-center" href="#">Support</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white scale-95 active:duration-100 transition-all">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-full cursor-pointer hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-secondary">account_circle</span>
+<span class="text-xs font-bold uppercase tracking-tight text-on-surface">Portal Access</span>
+</div>
+</div>
+</nav>
+<!-- SideNavBar (Updated to match SCREEN_6) -->
+<aside class="h-screen w-72 fixed left-0 top-0 overflow-y-auto bg-slate-100 dark:bg-slate-900 flex flex-col py-8 font-['Inter'] antialiased tracking-tight z-50">
+<div class="px-8 mb-10">
+<a class="block" href="{{DATA:SCREEN:SCREEN_6}}">
+<img alt="HongSheng Trading Logo" class="w-auto object-contain mb-2 w-full" src="https://lh3.googleusercontent.com/aida/ADBb0uhF6S5riCrqFJCpKLPLiO06JooTm13hddUSfupakvg2IggGxFVQzHHXR2topWUCdQ8vrHHfFWndyyym_WKKahaEvftivQWJJ7hgUT1QORvunJxdvqBMhwhGsLOS2ie6NEjn3Dhd7MCepC3TN1pyiqRXdk5DRNERhcoJRtaf4ZbRua-npxz2VA8JN_PQEL6YzZTCDyxOp_p4SYlPTAkOJUg1r70vEW6945SKAEisugQ-rGRNION_HT7oO1aCxnYUsUec9DaaIFRtOQ"/>
+<div class="text-xs text-slate-500 uppercase tracking-widest">Premium Heavy Equipment</div>
+</a>
+</div>
+<nav class="flex-1">
+<ul class="space-y-1">
+<li>
+<a class="flex items-center text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white pl-5 py-3 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 transition-all" href="{{DATA:SCREEN:SCREEN_2}}">
+<span class="material-symbols-outlined mr-3 text-slate-400">construction</span>
+<span>Excavators</span>
+</a>
+</li>
+<li>
+<a class="flex items-center text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white pl-5 py-3 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 transition-all" href="{{DATA:SCREEN:SCREEN_2}}">
+<span class="material-symbols-outlined mr-3">forklift</span>
+<span>Loaders</span>
+</a>
+</li>
+<li>
+<a class="flex items-center text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white pl-5 py-3 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 transition-all" href="{{DATA:SCREEN:SCREEN_2}}">
+<span class="material-symbols-outlined mr-3">architecture</span>
+<span>Cranes</span>
+</a>
+</li>
+<li>
+<a class="flex items-center text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white pl-5 py-3 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 transition-all" href="#">
+<span class="material-symbols-outlined mr-3 text-slate-400">settings_suggest</span>
+<span>Spare Parts</span>
+</a>
+</li>
+<li>
+<a class="flex items-center text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white pl-5 py-3 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 transition-all" href="#">
+<span class="material-symbols-outlined mr-3">build</span>
+<span>Service</span>
+</a>
+</li>
+</ul>
+</nav>
+<div class="mt-auto px-5 space-y-1">
+<a class="block w-full bg-[#7c5800] text-white py-3 px-4 rounded-xl font-bold text-sm mb-6 shadow-lg shadow-[#7c5800]/20 text-center scale-95 hover:scale-100 duration-150 ease-in-out" href="{{DATA:SCREEN:SCREEN_6}}">
+                Contact Specialist
+            </a>
+<a class="flex items-center text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white pl-5 py-3 transition-colors" href="#">
+<span class="material-symbols-outlined mr-3">settings</span>
+<span>Settings</span>
+</a>
+<a class="flex items-center text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white pl-5 py-3 transition-colors" href="{{DATA:SCREEN:SCREEN_6}}">
+<span class="material-symbols-outlined mr-3">language</span>
+<span>Language: RU/KZ</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Stage -->
+<main class="ml-72 mt-16 p-10 min-h-screen">
+<!-- Header Section -->
+<header class="mb-12">
+<span class="text-secondary font-bold tracking-widest uppercase text-xs mb-2 block">Technical Performance Analysis</span>
+<h1 class="text-6xl font-black text-on-surface tracking-tighter leading-none mb-4 uppercase">Wheel Loader <br/>Comparison</h1>
+<p class="text-on-surface-variant max-w-2xl text-lg leading-relaxed">
+                Objective benchmarks for mid-to-heavy duty earthmoving equipment. Evaluate lifting cycles, breakout efficiency, and operational weight across our flagship HongSheng Trading industrial line.
+            </p>
+</header>
+<!-- Comparison Matrix -->
+<div class="relative">
+<div class="grid grid-cols-12 gap-0 overflow-hidden rounded-xl bg-surface-container-low shadow-2xl shadow-on-surface/5">
+<!-- Parameter Labels Column -->
+<div class="col-span-3 bg-surface-container-high py-8 flex flex-col">
+<div class="h-64 px-8 flex items-end pb-8">
+<h3 class="text-secondary-container bg-on-secondary-container px-3 py-1.5 rounded font-black text-[10px] uppercase tracking-tighter">Model Specifications</h3>
+</div>
+<!-- Section: Core Specs -->
+<div class="bg-[#0054A6] text-white px-8 py-3 text-[10px] font-black uppercase tracking-[0.2em] flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">settings_suggest</span> Core Parameters
+                    </div>
+<div class="flex flex-col">
+<div class="px-8 py-6 text-xs font-bold uppercase text-on-surface-variant/70 tracking-widest">Lifting Capacity</div>
+<div class="px-8 py-6 text-xs font-bold uppercase text-on-surface-variant/70 tracking-widest bg-surface-container">Engine Power</div>
+<div class="px-8 py-6 text-xs font-bold uppercase text-on-surface-variant/70 tracking-widest">Operating Weight</div>
+</div>
+<!-- Section: Performance -->
+<div class="bg-[#0054A6] text-white px-8 py-3 text-[10px] font-black uppercase tracking-[0.2em] flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">bolt</span> Performance
+                    </div>
+<div class="flex flex-col">
+<div class="px-8 py-6 text-xs font-bold uppercase text-on-surface-variant/70 tracking-widest">Bucket Capacity</div>
+<div class="px-8 py-6 text-xs font-bold uppercase text-on-surface-variant/70 tracking-widest bg-surface-container">Breakout Force</div>
+<div class="px-8 py-6 text-xs font-bold uppercase text-on-surface-variant/70 tracking-widest">Dumping Height</div>
+</div>
+</div>
+<!-- Product 1: XC936 -->
+<div class="col-span-3 bg-surface-container-lowest flex flex-col transition-all hover:bg-white">
+<div class="h-64 p-4 flex flex-col items-center">
+<div class="w-full h-40 overflow-hidden rounded-lg mb-4 bg-surface-container">
+<img alt="XCMG XC936 Wheel Loader" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500 scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcTsMwVWHqvImXym7rCeiz_vPDdYMJTqfmj-ywn_lD2i93URYhypQRDorwqwhP5e1tqnZgO8i7mTKr9QiSN5eybEdC0-Py0QtDkNfkwn69fePERI7JoZQQyVhinHnrQxze2DDyZcRF-mddYuPDzOGIgB7k6SHTPJ1qQsu9d2meU9Sh2dLQBGZnqVkKBHnWBr2addlD747bke01rCVa3o6gPUPAsu6OhLBtHd8GLvULpqYyOuBIRlR4oVQ-x_G06LixLoqyakzTXHE"/>
+</div>
+<h2 class="text-3xl font-black text-on-surface tracking-tighter">XC936</h2>
+<span class="text-[10px] font-bold text-secondary uppercase tracking-widest">Mid-Range Utility</span>
+</div>
+<div class="flex flex-col text-center">
+<div class="h-[36px] bg-surface-container-highest/20"></div>
+<div class="py-6 text-lg font-bold text-on-surface">3,500 KG</div>
+<div class="py-6 text-lg font-bold text-on-surface bg-surface-container-low/40">92 KW / 125 HP</div>
+<div class="py-6 text-lg font-bold text-on-surface">11,000 KG</div>
+<div class="h-[36px] bg-surface-container-highest/20"></div>
+<div class="py-6 text-lg font-bold text-on-surface">1.8 - 2.5 m³</div>
+<div class="py-6 text-lg font-bold text-on-surface bg-surface-container-low/40">105 KN</div>
+<div class="py-6 text-lg font-bold text-on-surface">2,930 MM</div>
+</div>
+<div class="mt-auto p-8 border-t border-surface-container">
+<a class="w-full py-4 bg-primary text-on-primary font-black uppercase text-xs tracking-widest rounded-xl hover:shadow-lg transition-all active:scale-95 group flex items-center justify-center gap-2" href="{{DATA:SCREEN:SCREEN_6}}">
+                            Request Quote <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Product 2: LW300KN -->
+<div class="col-span-3 bg-surface-container-low flex flex-col transition-all hover:bg-surface-container-lowest shadow-inner">
+<div class="h-64 p-4 flex flex-col items-center">
+<div class="w-full h-40 overflow-hidden rounded-lg mb-4 bg-surface-container-high">
+<img alt="XCMG LW300KN Wheel Loader" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbq8PPKWgYPGxfS3ai12Aw2Wu_66V4WEeTsDKJIEG5qWVhWIvmcvc6z5Sah57kMFpjnjkkPhX8Iuoxf9mffYr0ue9ZRun2pGtlYZvG5W-U_kxYK7sYKM5_P7hfQT2gbil9HS6RVRsOBNgaON4CLOrLMZQL6Cuk8zUNXz5G4hFjPMvFRbCtkNjOKmSGXtu3c2uUYGwqEv-Pm9bifw9YsUQrq2VvwlLb2eKyp-8qXr1sb44aW-TPYXH8gX9bhBEcaAD_AXJbvREKRik"/>
+</div>
+<h2 class="text-3xl font-black text-on-surface tracking-tighter">LW300KN</h2>
+<span class="text-[10px] font-bold text-secondary uppercase tracking-widest">Heavy-Duty Standard</span>
+</div>
+<div class="flex flex-col text-center">
+<div class="h-[36px] bg-surface-container-highest/20"></div>
+<div class="py-6 text-lg font-bold text-on-surface">3,000 KG</div>
+<div class="py-6 text-lg font-bold text-on-surface bg-surface-container-high/40">92 KW / 125 HP</div>
+<div class="py-6 text-lg font-bold text-on-surface">10,900 KG</div>
+<div class="h-[36px] bg-surface-container-highest/20"></div>
+<div class="py-6 text-lg font-bold text-on-surface">1.8 m³</div>
+<div class="py-6 text-lg font-bold text-on-surface bg-surface-container-high/40">130 KN</div>
+<div class="py-6 text-lg font-bold text-on-surface">2,892 MM</div>
+</div>
+<div class="mt-auto p-8 border-t border-surface-container-high">
+<a class="w-full py-4 bg-primary text-on-primary font-black uppercase text-xs tracking-widest rounded-xl hover:shadow-lg transition-all active:scale-95 group flex items-center justify-center gap-2" href="{{DATA:SCREEN:SCREEN_6}}">
+                            Request Quote <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Product 3: LW500FN -->
+<div class="col-span-3 bg-surface-container-lowest flex flex-col transition-all hover:bg-white">
+<div class="h-64 p-4 flex flex-col items-center">
+<div class="w-full h-40 overflow-hidden rounded-lg mb-4 bg-surface-container">
+<img alt="XCMG LW500FN Wheel Loader" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500 scale-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRnYpzqDezWB77Op90LUVQo1VJ-tIB18IGA86jMYHWnTCGPAREJVHWVA7flbD_hMk7DHC2YLntuXHO8cWojfcU_XB6Xd5KvN14q3CJwS8KVJZ0RcrJZ4sty8Z3GI_q_yEBSthtGHeXrDFOL4FYUWh4GI2I0jK0yiJIsMYdgklH6kn0dwrPAbsEm06_1pXAsl9mRhEv0cAA3wDqaWIGOT5snzeNxFXb-tcHnZuwYLfHTjDhOJ1Umz0jVvWXnOYSi6DWnpetamESFkw"/>
+</div>
+<h2 class="text-3xl font-black text-on-surface tracking-tighter">LW500FN</h2>
+<span class="text-[10px] font-bold text-secondary uppercase tracking-widest">Premium Heavy Capacity</span>
+</div>
+<div class="flex flex-col text-center">
+<div class="h-[36px] bg-surface-container-highest/20"></div>
+<div class="py-6 text-lg font-bold text-on-surface">5,000 KG</div>
+<div class="py-6 text-lg font-bold text-on-surface bg-surface-container-low/40">162 KW / 220 HP</div>
+<div class="py-6 text-lg font-bold text-on-surface">17,100 KG</div>
+<div class="h-[36px] bg-surface-container-highest/20"></div>
+<div class="py-6 text-lg font-bold text-on-surface">3.0 m³</div>
+<div class="py-6 text-lg font-bold text-on-surface bg-surface-container-low/40">160 KN</div>
+<div class="py-6 text-lg font-bold text-on-surface">3,100 MM</div>
+</div>
+<div class="mt-auto p-8 border-t border-surface-container">
+<a class="w-full py-4 bg-primary text-on-primary font-black uppercase text-xs tracking-widest rounded-xl hover:shadow-lg transition-all active:scale-95 group flex items-center justify-center gap-2" href="{{DATA:SCREEN:SCREEN_6}}">
+                            Request Quote <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer / Disclaimers -->
+<footer class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-on-surface-variant/60">
+<div class="flex flex-col gap-4">
+<span class="material-symbols-outlined text-4xl text-outline-variant/30">verified</span>
+<p class="text-xs font-medium leading-relaxed">Technical parameters are based on standard ISO testing environments. Actual field performance may vary based on terrain, material density, and operator proficiency.</p>
+</div>
+<div class="flex flex-col gap-4">
+<span class="material-symbols-outlined text-4xl text-outline-variant/30">support_agent</span>
+<p class="text-xs font-medium leading-relaxed">Consult with your regional XCMG dealer for customized attachment packages including specialized buckets, pallet forks, and high-dumping configurations.</p>
+</div>
+<div class="flex flex-col gap-4">
+<span class="material-symbols-outlined text-4xl text-outline-variant/30">inventory_2</span>
+<p class="text-xs font-medium leading-relaxed">XCMG Genuine Parts and service support are guaranteed for 10,000 operational hours or 2 years, whichever occurs first, subject to maintenance guidelines.</p>
+</div>
+</footer>
+</main>
+</body></html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+
+<html lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>XCMG Global - Industrial Precision Kazakhstan</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-on-surface": "#f0f1f2",
+                    "secondary-fixed": "#d6e3ff",
+                    "inverse-surface": "#2e3132",
+                    "tertiary-fixed": "#e5e2e1",
+                    "surface-container": "#edeeef",
+                    "on-primary": "#ffffff",
+                    "surface-variant": "#e1e3e4",
+                    "on-primary-fixed-variant": "#5e4200",
+                    "outline-variant": "#d5c4ac",
+                    "primary-container": "#fdb913",
+                    "on-error-container": "#93000a",
+                    "background": "#f8f9fa",
+                    "primary-fixed": "#ffdea6",
+                    "on-surface-variant": "#504533",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "surface-bright": "#f8f9fa",
+                    "surface": "#f8f9fa",
+                    "on-primary-fixed": "#271900",
+                    "tertiary-container": "#c7c4c4",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-low": "#f3f4f5",
+                    "on-secondary-fixed": "#001b3d",
+                    "secondary": "#185eb0",
+                    "on-tertiary-fixed": "#1c1b1b",
+                    "on-surface": "#191c1d",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-secondary-container": "#003b77",
+                    "inverse-primary": "#ffbb16",
+                    "secondary-fixed-dim": "#a9c7ff",
+                    "on-error": "#ffffff",
+                    "surface-dim": "#d9dadb",
+                    "on-tertiary-fixed-variant": "#474746",
+                    "on-secondary-fixed-variant": "#00468c",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "primary": "#7c5800",
+                    "on-tertiary-container": "#525151",
+                    "secondary-container": "#70a6fe",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary": "#5f5e5e",
+                    "primary-fixed-dim": "#ffbb16",
+                    "surface-tint": "#7c5800",
+                    "on-background": "#191c1d",
+                    "outline": "#837560",
+                    "on-primary-container": "#6b4c00",
+                    "surface-container-high": "#e7e8e9",
+                    "xcmg-blue": "#0054A6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        .lang-active { color: #0054A6; font-weight: 800; }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- SideNavBar (Shared Component) -->
+<aside class="h-screen w-64 fixed left-0 top-0 overflow-y-auto bg-[#f3f4f5] dark:bg-slate-900 flex flex-col py-8 z-50 border-r border-slate-200">
+<div class="px-6 mb-12">
+<a class="flex items-center gap-3 mb-1 group" href="{{DATA:SCREEN:SCREEN_6}}"><div class="bg-white rounded flex items-center justify-center transition-transform group-hover:scale-105 overflow-hidden w-14 h-14">
+<img alt="HongSheng Trading Logo" class="w-full h-full object-contain p-1" src="https://lh3.googleusercontent.com/aida/ADBb0uhF6S5riCrqFJCpKLPLiO06JooTm13hddUSfupakvg2IggGxFVQzHHXR2topWUCdQ8vrHHfFWndyyym_WKKahaEvftivQWJJ7hgUT1QORvunJxdvqBMhwhGsLOS2ie6NEjn3Dhd7MCepC3TN1pyiqRXdk5DRNERhcoJRtaf4ZbRua-npxz2VA8JN_PQEL6YzZTCDyxOp_p4SYlPTAkOJUg1r70vEW6945SKAEisugQ-rGRNION_HT7oO1aCxnYUsUec9DaaIFRtOQ"/>
+</div>
+<div>
+<h1 class="font-black text-[#191c1d] dark:text-white tracking-tighter text-xl">HongSheng</h1>
+<p class="text-[10px] font-bold uppercase tracking-widest text-primary">Trading</p>
+</div></a>
+</div>
+<nav class="flex-1 space-y-1">
+<div class="px-4 py-2">
+<p class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] px-2 mb-2">Main Categories</p>
+<a class="flex items-center gap-3 border-l-4 border-xcmg-blue text-[#191c1d] dark:text-white font-bold pl-4 py-3 bg-white/50 dark:bg-white/5 group transition-all" href="{{DATA:SCREEN:SCREEN_2}}">
+<span class="material-symbols-outlined text-xcmg-blue">construction</span>
+<span class="text-sm font-semibold tracking-tight">Excavators</span>
+</a>
+<a class="flex items-center gap-3 text-slate-500 dark:text-slate-400 pl-5 py-3 hover:bg-white/80 dark:hover:bg-white/10 transition-colors duration-200" href="{{DATA:SCREEN:SCREEN_2}}">
+<span class="material-symbols-outlined">agriculture</span>
+<span class="text-sm font-semibold tracking-tight">Loaders</span>
+</a>
+<a class="flex items-center gap-3 text-slate-500 dark:text-slate-400 pl-5 py-3 hover:bg-white/80 dark:hover:bg-white/10 transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">architecture</span>
+<span class="text-sm font-semibold tracking-tight">Cranes</span>
+</a>
+<a class="flex items-center gap-3 text-slate-500 dark:text-slate-400 pl-5 py-3 hover:bg-white/80 dark:hover:bg-white/10 transition-colors duration-200" href="#">
+<span class="material-symbols-outlined text-slate-400">settings_suggest</span>
+<span class="text-sm font-semibold tracking-tight">Spare Parts</span>
+</a>
+<a class="flex items-center gap-3 text-slate-500 dark:text-slate-400 pl-5 py-3 hover:bg-white/80 dark:hover:bg-white/10 transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">build</span>
+<span class="text-sm font-semibold tracking-tight">Service</span>
+</a>
+</div>
+</nav>
+<div class="px-6 mt-auto space-y-4">
+<button class="w-full py-3 bg-xcmg-blue text-white text-xs font-bold rounded-xl flex items-center justify-center gap-2 hover:opacity-90 transition-opacity shadow-lg shadow-xcmg-blue/20">
+<span>Contact Specialist</span>
+</button>
+<div class="pt-6 space-y-1">
+<a class="flex items-center gap-3 text-slate-500 text-sm font-semibold px-2 py-2 hover:text-xcmg-blue transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">settings</span>
+<span>Settings</span>
+</a>
+<button class="w-full flex items-center gap-3 text-slate-500 text-sm font-semibold px-2 py-2 hover:text-xcmg-blue transition-colors" onclick="this.querySelector('.lang-toggle').innerText = this.querySelector('.lang-toggle').innerText === 'RU' ? 'KZ' : 'RU'">
+<span class="material-symbols-outlined text-lg">language</span>
+<span>Language: <span class="lang-toggle text-xcmg-blue font-bold">RU</span></span>
+</button>
+</div>
+</div>
+</aside>
+<!-- Main Content Stage -->
+<main class="ml-64 min-h-screen relative">
+<!-- TopNavBar (Shared Component) -->
+<header class="fixed top-0 right-0 w-[calc(100%-16rem)] h-16 z-40 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl border-b border-slate-200/50 dark:border-slate-800/50 flex items-center justify-between px-8 shadow-sm dark:shadow-none">
+<div class="flex items-center space-x-8">
+<span class="font-['Inter'] uppercase tracking-widest text-xs font-bold text-xcmg-blue border-b-2 border-xcmg-blue py-5">Inventory</span>
+<span class="font-['Inter'] uppercase tracking-widest text-xs font-bold text-slate-500 dark:text-slate-400 opacity-80 hover:opacity-100 hover:text-xcmg-blue cursor-pointer transition-all">Fleet Management</span>
+<span class="font-['Inter'] uppercase tracking-widest text-xs font-bold text-slate-500 dark:text-slate-400 opacity-80 hover:opacity-100 hover:text-xcmg-blue cursor-pointer transition-all">Financing</span>
+<span class="font-['Inter'] uppercase tracking-widest text-xs font-bold text-slate-500 dark:text-slate-400 opacity-80 hover:opacity-100 hover:text-xcmg-blue cursor-pointer transition-all">Support</span>
+</div>
+<div class="flex items-center space-x-4">
+<div class="relative group">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer p-2 rounded-full hover:bg-surface-container transition-all">notifications</span>
+</div>
+<div class="flex items-center space-x-2 bg-surface-container-low px-3 py-1.5 rounded-full cursor-pointer hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-secondary">account_circle</span>
+<span class="text-xs font-bold uppercase tracking-tight text-on-surface">Portal Access</span>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="pt-16 min-h-[870px] flex items-center bg-surface relative overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-90" data-alt="Massive yellow XCMG wheel loader working in a Kazakhstan open pit mine at dusk with dramatic industrial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaeoXaYy2Na8Kzwud0MmJ9sidzN3lyyvM4Npqnzfi-vFiZuRfPDTCVMaHfddH7k_nJDI9VyXNGq25t0B4qe-B8-cDEcMOCMtQ8x5n4q5eq41eFGbJTbe2LpnaO25UtkByPGAHUtFcLQ6UF7NiMQerYa_WhuPVzOsrQuACB2JFByDh6dl_eh4yvmUHD9EMFBgR1Tz8d6LujZn5UWX_NHXVK5KozrUObVaZyHcHUKpMIHcF6bpxI5yhOjJA75LXMcYCUqRGUz0c-ob0"/>
+<div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/70 to-transparent"></div>
+</div>
+<div class="relative z-10 px-12 max-w-4xl">
+<div class="inline-block px-3 py-1 bg-primary-container text-on-primary-fixed font-bold text-[10px] uppercase tracking-[0.2em] mb-6 rounded-sm">
+                    Официальный дистрибьютор в Казахстане
+                </div>
+<h1 class="text-6xl md:text-7xl font-black text-white leading-[1.1] mb-6 tracking-tighter">Надежная спецтехника <span class="text-primary-container">HongSheng</span> для вашего бизнеса</h1>
+<p class="text-xl text-slate-300 font-medium max-w-xl mb-10 leading-relaxed">
+                    Официальный дилер в Казахстане. Поставки напрямую с завода, полный сервис и оригинальные запчасти в наличии.
+                </p>
+<div class="flex items-center space-x-6">
+<a class="bg-xcmg-blue hover:bg-xcmg-blue/90 text-white px-10 py-5 rounded-xl font-extrabold text-lg transition-all shadow-2xl shadow-xcmg-blue/40 flex items-center group" href="{{DATA:SCREEN:SCREEN_2}}">
+                        Смотреть каталог
+                        <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<button class="bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 text-white px-10 py-5 rounded-xl font-extrabold text-lg transition-all">
+                        Техническая поддержка
+                    </button>
+</div>
+</div>
+</section>
+<!-- Best Sellers / Product Grid -->
+<section class="py-24 px-12 bg-surface">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="text-4xl font-black tracking-tighter text-on-surface mb-2 uppercase">Хиты продаж</h2>
+<div class="h-1.5 w-24 bg-primary-container"></div>
+</div>
+<a class="text-secondary font-bold flex items-center hover:underline decoration-2 underline-offset-4" href="{{DATA:SCREEN:SCREEN_2}}">
+                    Весь каталог техники
+                    <span class="material-symbols-outlined ml-1">chevron_right</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Product Card 1 -->
+<a class="bg-surface-container-lowest group relative transition-all duration-300 hover:-translate-y-2 block" href="{{DATA:SCREEN:SCREEN_4}}">
+<div class="h-64 overflow-hidden bg-surface-container-low relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Side profile of a medium size yellow hydraulic excavator XCMG XE215C on a construction site" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5BxTzZSqXP51Ph1bBelKkiXdNltENxrQNOO80ZsZtj6QEPiPmZba8QANoBEYjSn0aZcxO4l-eq8wy0az9mebRR2TRqGpVo2piuAGadQ9L27jRIYFnsT7Bgyaa-AgQIx1YJ-j98zsPTXOlHlihvcl0-lDejoJo6C04zQ8Lu1zGhUAjUsKKy9kHnBkkIvVmAyg4res_Melxx0A4CjdC2Cpw2D-BVatbk1nplhc3YUnGJnv2PfdgwZWX8icX6Ah7dpefpEesMqFQYA4"/>
+<div class="absolute top-4 left-4 bg-on-surface text-white px-3 py-1 text-xs font-bold uppercase tracking-widest">In Stock</div>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-black text-on-surface mb-4 leading-tight">Excavator XCMG XE215C</h3>
+<div class="grid grid-cols-2 gap-y-6 mb-8">
+<div>
+<span class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Weight</span>
+<span class="text-lg font-bold text-on-surface">21.5 t</span>
+</div>
+<div>
+<span class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Bucket</span>
+<span class="text-lg font-bold text-on-surface">1.0 m³</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest group-hover:bg-xcmg-blue group-hover:text-white py-4 rounded-lg font-bold transition-all flex items-center justify-center">
+                            Узнать цену
+                            <span class="material-symbols-outlined ml-2 opacity-0 group-hover:opacity-100 transition-opacity">request_quote</span>
+</div>
+</div>
+</a>
+<!-- Product Card 2 -->
+<a class="bg-surface-container-lowest group relative transition-all duration-300 hover:-translate-y-2 block" href="{{DATA:SCREEN:SCREEN_4}}">
+<div class="h-64 overflow-hidden bg-surface-container-low relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Heavy duty yellow front loader XCMG LW300KN lifting earth against a bright sky background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMHacNO1CsshppS-Onbj804wHHE7uM_uXH2nOX5_VSsNn4-2WbpiicACo1GYUshmQ0rQjYLxY5yd45B_fcDt5loSQxSo46WBq7fp24bulo6ojjBqhMKIdRSfaxcbpcuor1y03ecYFXYd3rmbE8SnTYMa_p4a6l5I8_3WLVqSVoaAb8Gydf6i4ALAI8NzCOhKhBbL8yJshZcOe0d4RN65uONYf2whrR4xgo9xdlWYs5SGneoU3HkIkEXoKbPz-A3Vi06XvubQqLpfk"/>
+<div class="absolute top-4 left-4 bg-secondary text-white px-3 py-1 text-xs font-bold uppercase tracking-widest">Financing Available</div>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-black text-on-surface mb-4 leading-tight">Loader XCMG LW300KN</h3>
+<div class="grid grid-cols-2 gap-y-6 mb-8">
+<div>
+<span class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Load Capacity</span>
+<span class="text-lg font-bold text-on-surface">3.0 t</span>
+</div>
+<div>
+<span class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Power</span>
+<span class="text-lg font-bold text-on-surface">92 kW</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest group-hover:bg-xcmg-blue group-hover:text-white py-4 rounded-lg font-bold transition-all flex items-center justify-center">
+                            Узнать цену
+                            <span class="material-symbols-outlined ml-2 opacity-0 group-hover:opacity-100 transition-opacity">request_quote</span>
+</div>
+</div>
+</a>
+<!-- Product Card 3 -->
+<a class="bg-surface-container-lowest group relative transition-all duration-300 hover:-translate-y-2 block" href="{{DATA:SCREEN:SCREEN_4}}">
+<div class="h-64 overflow-hidden bg-surface-container-low relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Large yellow truck crane XCMG QY25K5 with extended boom working in an urban setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP16PBlE8bJ6p-phOUc_xCExAAcRmHteXa8cOZpVY2MpKkAIPqUwSu2rzRp7HFqtfFCkc7g2h_4FuJ4If2g2bYrh23kzZhcUskPpnPyjLopOG0UOMSZ3P2SX1YwvqvdczHcP9BLloLPqDmnCQvk4vQCy6nZUk-g5JLNFRuTrGHUfVWzAJmBJaFgysSLfqSq8ZGrIj94VCnDt_01m-FAZQJtENmgoaavD06YVaQHcITUVTtJy5I8y20ddd9a22QOTiQ1ma352GjiNw"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-black text-on-surface mb-4 leading-tight">Crane XCMG QY25K5</h3>
+<div class="grid grid-cols-2 gap-y-6 mb-8">
+<div>
+<span class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Max Capacity</span>
+<span class="text-lg font-bold text-on-surface">25 t</span>
+</div>
+<div>
+<span class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Boom Length</span>
+<span class="text-lg font-bold text-on-surface">34 m</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest group-hover:bg-xcmg-blue group-hover:text-white py-4 rounded-lg font-bold transition-all flex items-center justify-center">
+                            Узнать цену
+                            <span class="material-symbols-outlined ml-2 opacity-0 group-hover:opacity-100 transition-opacity">request_quote</span>
+</div>
+</div>
+</a>
+</div>
+</section>
+<!-- Leasing Calculator Widget -->
+<section class="py-24 px-12 bg-surface-container-low relative">
+<div class="absolute right-0 top-0 w-1/3 h-full overflow-hidden opacity-10 pointer-events-none">
+<img class="w-full h-full object-cover grayscale" data-alt="Technical drawing of hydraulic system and gears of industrial machinery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4ztRxkvZo74HUOIT4MMK5HSE3kItXfgd6Cbskkh44taL1HpiNuRN-TNY1ognJ65gHcm5sv0n6ToTqeHNYQIFUV2AyD0vYQxdp8yPVHugrfnLBfXo0WANkegbP1Rd2m1OmH7xULBbQubFZMrGScJR5agQpWd_R3oY9_oNwoSZVgztLpcmCDQYJtsgf4KPsZp2MiU-O_kYBD3rDS86UlY4cuoryCsZjh44vsdRCt2J5GIeiBOtF2zHwaaVNXaOLdu_DfG5N5lABxVs"/>
+</div>
+<div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+<div class="lg:w-1/2">
+<h2 class="text-4xl font-black tracking-tighter text-on-surface mb-6 uppercase">Калькулятор лизинга</h2>
+<p class="text-lg text-on-surface-variant mb-8 leading-relaxed">
+                        Мы предлагаем гибкие финансовые условия для развития вашего бизнеса. Рассчитайте предварительный ежемесячный платеж прямо сейчас.
+                    </p>
+<ul class="space-y-4">
+<li class="flex items-center text-on-surface font-bold">
+<span class="material-symbols-outlined text-xcmg-blue mr-3">check_circle</span>
+                            Первоначальный взнос от 10%
+                        </li>
+<li class="flex items-center text-on-surface font-bold">
+<span class="material-symbols-outlined text-xcmg-blue mr-3">check_circle</span>
+                            Срок лизинга до 60 месяцев
+                        </li>
+<li class="flex items-center text-on-surface font-bold">
+<span class="material-symbols-outlined text-xcmg-blue mr-3">check_circle</span>
+                            Быстрое одобрение по 2 документам
+                        </li>
+</ul>
+</div>
+<div class="lg:w-1/2 w-full">
+<div class="bg-white/80 backdrop-blur-xl p-10 rounded-xl shadow-2xl border border-white/50">
+<div class="space-y-6">
+<div>
+<label class="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Стоимость техники (₸)</label>
+<input class="w-full bg-surface-container-highest border-none p-4 rounded-lg font-bold text-lg focus:ring-2 focus:ring-xcmg-blue/30 transition-all" type="number" value="45000000"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Первоначальный взнос (₸)</label>
+<input class="w-full bg-surface-container-highest border-none p-4 rounded-lg font-bold text-lg focus:ring-2 focus:ring-xcmg-blue/30 transition-all" type="number" value="9000000"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Срок лизинга (мес.)</label>
+<select class="w-full bg-surface-container-highest border-none p-4 rounded-lg font-bold text-lg focus:ring-2 focus:ring-xcmg-blue/30 transition-all">
+<option>12 месяцев</option>
+<option>24 месяца</option>
+<option selected="">36 месяцев</option>
+<option>48 месяцев</option>
+<option>60 месяцев</option>
+</select>
+</div>
+<div class="pt-6 border-t border-slate-200">
+<div class="flex justify-between items-end mb-6">
+<span class="text-sm font-bold text-slate-500">Ежемесячный платеж:</span>
+<span class="text-3xl font-black text-xcmg-blue">~ 1,125,000 ₸</span>
+</div>
+<button class="w-full bg-xcmg-blue text-white py-5 rounded-xl font-extrabold text-lg shadow-xl shadow-xcmg-blue/30 hover:bg-xcmg-blue/90 transition-all">
+                                    Получить точный расчет
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="py-20 px-12 bg-white flex flex-wrap justify-between items-center text-center">
+<div class="p-4 flex-1 min-w-[200px]">
+<div class="text-5xl font-black text-on-surface mb-2 tracking-tighter">15+</div>
+<div class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Лет на рынке Казахстана</div>
+</div>
+<div class="p-4 flex-1 min-w-[200px]">
+<div class="text-5xl font-black text-on-surface mb-2 tracking-tighter">24/7</div>
+<div class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Сервисная поддержка</div>
+</div>
+<div class="p-4 flex-1 min-w-[200px]">
+<div class="text-5xl font-black text-on-surface mb-2 tracking-tighter">500+</div>
+<div class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Единиц техники в наличии</div>
+</div>
+<div class="p-4 flex-1 min-w-[200px]">
+<div class="text-5xl font-black text-on-surface mb-2 tracking-tighter">100%</div>
+<div class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Оригинальные запчасти</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-slate-950 text-white py-16 px-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1 md:col-span-1">
+<div class="text-2xl font-black tracking-tighter mb-6">HONGSHENG TRADING</div>
+<p class="text-slate-400 text-sm leading-relaxed mb-6">Ваш надежный партнер в мире тяжелой индустрии. Строим будущее вместе с технологиями HongSheng Trading.</p>
+<div class="flex space-x-4">
+<span class="material-symbols-outlined cursor-pointer hover:text-xcmg-blue transition-colors">public</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-xcmg-blue transition-colors">hub</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-xcmg-blue transition-colors">mail</span>
+</div>
+</div>
+<div>
+<h4 class="text-xs font-bold uppercase tracking-widest mb-6 text-primary-container">Разделы</h4>
+<ul class="space-y-3 text-sm text-slate-400">
+<li class="hover:text-white cursor-pointer transition-colors">Каталог техники</li>
+<li class="hover:text-white cursor-pointer transition-colors">Запчасти и сервис</li>
+<li class="hover:text-white cursor-pointer transition-colors">Лизинг и кредит</li>
+<li class="hover:text-white cursor-pointer transition-colors">О компании</li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold uppercase tracking-widest mb-6 text-primary-container">Контакты</h4>
+<ul class="space-y-3 text-sm text-slate-400">
+<li class="flex items-center">
+<span class="material-symbols-outlined text-xs mr-2">location_on</span>
+                            Алматы, ул. Абая 45
+                        </li>
+<li class="flex items-center">
+<span class="material-symbols-outlined text-xs mr-2">phone</span>
+                            +7 (777) 123-45-67
+                        </li>
+<li class="flex items-center">
+<span class="material-symbols-outlined text-xs mr-2">mail</span>
+                            info@xcmg-kz.com
+                        </li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold uppercase tracking-widest mb-6 text-primary-container">Новости</h4>
+<p class="text-xs text-slate-500 mb-4">Подпишитесь на обновления ассортимента и спецпредложения.</p>
+<div class="flex bg-slate-900 rounded-lg p-1">
+<input class="bg-transparent border-none text-sm w-full focus:ring-0" placeholder="Email" type="email"/>
+<button class="bg-xcmg-blue text-white p-2 rounded-md">
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-900 flex justify-between items-center text-xs text-slate-500">
+<span>© 2024 HongSheng Trading Kazakhstan. Все права защищены.</span>
+<div class="flex space-x-6">
+<span class="hover:text-slate-300 cursor-pointer">© 2024 HongSheng Trading Kazakhstan. Все права защищены.</span>
+<span class="hover:text-slate-300 cursor-pointer">Условия использования</span>
+</div>
+</div>
+</footer>
+</main>
+<!-- Floating WhatsApp Button -->
+<a class="fixed bottom-8 right-8 z-[100] bg-[#25D366] text-white p-4 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform group" href="https://wa.me/77771234567" target="_blank">
+<svg class="w-8 h-8 fill-current" viewbox="0 0 24 24">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.891 11.893-11.891 3.181 0 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.481 8.413 0 6.556-5.332 11.892-11.893 11.892-1.997 0-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.591 5.405 0 9.801-4.393 9.801-9.802 0-2.618-1.02-5.08-2.871-6.932-1.851-1.852-4.311-2.872-6.93-2.872-5.406 0-9.803 4.397-9.803 9.806 0 2.215.621 4.034 1.788 5.699l-.998 3.645 3.621-.935zm10.076-7.032c-.3-.15-1.774-.875-2.048-.976-.275-.1-.475-.15-.675.15s-.776.976-.951 1.176-.35.225-.65.075c-.3-.15-1.267-.467-2.414-1.492-.893-.795-1.495-1.777-1.67-2.078-.175-.3-.019-.462.13-.611.135-.133.3-.35.45-.525.15-.175.2-.3.3-.5s.05-.375-.025-.525-.675-1.625-.925-2.225c-.244-.589-.491-.51-.675-.519-.174-.009-.374-.01-.574-.01s-.525.075-.8.375c-.275.3-1.05 1.026-1.05 2.5s1.075 2.9 1.225 3.1c.15.2 2.115 3.23 5.123 4.53 2.507 1.083 3.018.868 3.568.817.55-.05 1.774-.725 2.024-1.425.25-.7.25-1.3.175-1.425-.076-.125-.276-.2-.576-.35z"></path>
+</svg>
+<span class="absolute right-full mr-4 bg-white text-on-surface py-2 px-4 rounded-lg font-bold text-sm shadow-xl whitespace-nowrap opacity-0 translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all pointer-events-none">
+            Напишите нам в WhatsApp
+        </span>
+</a>
+</body></html>
